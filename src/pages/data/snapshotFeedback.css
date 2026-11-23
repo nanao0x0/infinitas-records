@@ -1,0 +1,50 @@
+@media (prefers-reduced-motion: no-preference) {
+  .snapshot-confirmation[open] {
+    animation: snapshot-slide-in 200ms ease-out;
+    --snapshot-entry-offset: 48px;
+  }
+
+  .snapshot-confirmation[open]::backdrop {
+    animation: snapshot-fade-in 200ms ease-out;
+  }
+
+  .snapshot-toast {
+    animation: snapshot-slide-in 200ms ease-out;
+    --snapshot-entry-offset: 12px;
+  }
+
+  .snapshot-confirmation[open][data-closing],
+  .snapshot-toast[data-closing] {
+    animation: snapshot-slide-out 200ms ease-in forwards;
+  }
+
+  .snapshot-confirmation[open][data-closing]::backdrop {
+    animation: snapshot-fade-out 200ms ease-in forwards;
+  }
+}
+
+@keyframes snapshot-slide-in {
+  from {
+    opacity: 0;
+    translate: 0 var(--snapshot-entry-offset);
+  }
+}
+
+@keyframes snapshot-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes snapshot-slide-out {
+  to {
+    opacity: 0;
+    translate: 0 var(--snapshot-entry-offset);
+  }
+}
+
+@keyframes snapshot-fade-out {
+  to {
+    opacity: 0;
+  }
+}
