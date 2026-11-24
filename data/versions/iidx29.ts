@@ -542,7 +542,7 @@ const data: VersionData = {
             options: 0,
           },
           leggendaria: {
-            level: null,
+            level: 10,
             options: 0,
           },
         },
@@ -560,7 +560,7 @@ const data: VersionData = {
             options: 0,
           },
           leggendaria: {
-            level: null,
+            level: 10,
             options: 0,
           },
         },
@@ -2582,8 +2582,8 @@ const data: VersionData = {
             options: 0,
           },
           leggendaria: {
-            level: null,
-            options: 0,
+            level: 12,
+            options: 4,
           },
         },
         dp: {
@@ -2600,7 +2600,7 @@ const data: VersionData = {
             options: 0,
           },
           leggendaria: {
-            level: null,
+            level: 12,
             options: 0,
           },
         },
